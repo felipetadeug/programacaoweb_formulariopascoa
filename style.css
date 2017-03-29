@@ -1,0 +1,103 @@
+/*
+http://www.promocoesespetaculares.com.br/sistema/pascoa/cadastrarCliente.action?nome=Daniel&sobrenome=Savoy&nascimento=1980-12-12&nf=213774893&items=Coelho+de+Chocolate+500g&items=Meias+Cinza+42&items=Bicicleta+36+Marchas&data=2017-03-20&sexo=Masculino&total=567.43&loja=Casas+Alagoas&resposta=O+melhor+chocolate+que+eu+costumo+comprar+eh+o+UberCacauSuperLeitePlus&premios[2]=Viagem+para+Ilha+de+Pascoa&premios[1]=Coelho+inflavel+BunnysZord+tamanho+real&premios[3]=Sal+de+fruta+Especial+de+Pascoa&brinde=Chocolate+Amargo+200+porcento+cacau&id=487312678
+*/
+
+html {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url("http://st.depositphotos.com/2390973/2979/i/950/depositphotos_29793309-stock-photo-background-texture-of-chocolate-sprinkles.jpg");
+
+}
+
+p{
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+}
+
+img{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.distribuicao{
+    float: left;
+}
+.container {
+    width: 450px;
+    height: auto;
+    background-color: #EFEFEF;
+    margin: 5% auto;
+    padding-bottom: 20px;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+    border-top: solid 8px #CD6600;
+}
+
+.titulo h1 {
+    font-weight: bold;
+    color: #B5B5B5;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 60px;
+}
+
+h1 span {
+    color: #8B5742;
+}
+
+select{
+    padding: 0;
+    margin: 0;
+}
+
+.formulario {
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.regiao_botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.input, .botao{
+    background-color: #EFEFEF;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border: solid #C8C8C8 3px;
+    transition: all 0.5s;
+}
+
+.input:focus {
+    border-bottom: solid #31B1E5 3px;
+}
+
+.botao {
+    width: 100%;
+    border: none;
+    background-color: #31B1E5;
+    color: white;
+    font-size: 18px;
+}
+
+
+.botao:hover {
+    background-color: #4C9ED9;
+}
+

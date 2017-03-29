@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>Promoção de Páscoa - 2017</title>
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="titulo">
+			<h1>Páscoa<span> Premida 2017</span></h1>
+		</div>		
+
+		<form class="formulario" action="http://www.promocoesespetaculares.com.br/sistema/pascoa/cadastrarCliente.action">
+			<h1>Cliente</h1>
+			<p>*Nome:</p>
+			<input name="nome" class="input" type="text" >
+			<p>*Sobrenome:</p>
+			<input name="sobrenome" class="input" type="text">
+			<p>*Data de Nascimento:</p>
+			<input name="nascimento" class="input" type="date">
+			
+			<br><br>
+			<h1>Compra</h1>
+			<p>Número da Nota Fiscal:</p>
+			<input name="nf" class="input" type="text">
+
+			<p>Descreva seus itens de acordo com a nota fiscal:</p>
+			<div id="origem">
+				<input name="items" class="input" type="text">
+
+				<img  src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/add-128.png" style="cursor: pointer;" onclick="inserirElemento();">
+
+				<img  src="https://cdn1.iconfinder.com/data/icons/squared/64/trash-bin-128.png" style="cursor: pointer;" onclick="removerElementos(this);"> 
+			</div>
+			<div id="destino">
+			</div>
+
+			<p>Data de Ingresso na Promoção:</p>
+			<input name="data" class="input" type="date">
+			
+
+
+			<p>Sexo</p>
+			<br />
+			<div class="distribuicao">
+			 	<input name="sexo" type="radio"/ value="Masculino">Masculino
+				<input name="sexo" type="radio"/ value="Feminino">Feminino
+			</div>
+	        
+			<p>Informe o valor total da nota: (R$ 0,00)</p>
+			<input name="total" class="input" type="text">
+
+			<p>Loja:</p>
+			<input name="loja" class="input" type="text">
+
+			<br><br>
+			<h1>Prêmiação:</h1> 
+
+			<p>Frase da Promoção:</p>
+			<input name="resposta" class="input" type="text">
+				
+			<p>Selecione os prêmios a concorrer:</p>
+			<br />
+			<div class="distribuicao">
+				<input name="premio[1]" type="checkbox" value="Viagem para Ilha de Pascoa">Viagem para Ilha de Pascoa<br><br>
+				<input name="premio[2]" type="checkbox" value="Coelho Inflavel BunnysZord Tamanho Real">Coelho Inflavel BunnysZord Tamanho Real<br><br>
+				<input name="premio[3]" type="checkbox" value="Sal de Fruta Especial de Pascoa">Sal de Fruta Especial de Pascoa<br>
+			</div>
+			
+			<p>Escolha seu brinde:</p>
+			<select name="brinde" class="input">
+				<option selected disabled value="">Selecione</option>
+				<option>Chocolate Amargo 200 por cento Cacau</option>
+				<option>Chocolate com Pimenta</option>
+				<option>5 Star Chocolate</option>
+			</select>
+		
+			<p>Seu ID na Promoção:</p>
+			<input name="id" class="input" type="text" value="487312678" readonly>
+
+		    <div class="regiao_botao">
+            	<input class="botao" type="submit" value="Cadastrar">
+            </div>
+		</form>
+	</div>
+
+	<script src="programa.js"></script>
+	
+</body>
+</html>
